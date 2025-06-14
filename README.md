@@ -16,13 +16,10 @@ Download pre-built binary for your system here [Releases](https://github.com/Cor
 git clone https://github.com/CoreyRobinsonDev/passgen.git
 ```
 - Create **passgen** binary
-```bash
-cd passgen
-go build
-```
 - Move binary to <code>/usr/local/bin</code> to call it from anywhere in the terminal
 ```bash
-sudo mv ./passgen /usr/local/bin
+cd passgen
+go build -o /usr/local/bin .
 ```
 - Confirm that the program was built successfully
 ```bash
